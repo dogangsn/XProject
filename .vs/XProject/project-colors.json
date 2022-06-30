@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2e8071c6-620c-4d95-a389-33142da693df": {
+      "ProjectGuid": "2e8071c6-620c-4d95-a389-33142da693df",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 0
+    },
+    "df76e91e-6e40-4842-b6a6-b7706b804c6f": {
+      "ProjectGuid": "df76e91e-6e40-4842-b6a6-b7706b804c6f",
+      "DisplayName": "XProject.Application",
+      "ColorIndex": 1
+    },
+    "81061310-0d2d-452d-8171-f239e1f15370": {
+      "ProjectGuid": "81061310-0d2d-452d-8171-f239e1f15370",
+      "DisplayName": "XProject.IdentityServer",
+      "ColorIndex": 2
+    },
+    "b1e795ca-83c4-4788-a304-5370e611f69f": {
+      "ProjectGuid": "b1e795ca-83c4-4788-a304-5370e611f69f",
+      "DisplayName": "XProject.Identity.Application",
+      "ColorIndex": 3
+    },
+    "30424d26-9700-4090-bb61-c0ef48acb0b0": {
+      "ProjectGuid": "30424d26-9700-4090-bb61-c0ef48acb0b0",
+      "DisplayName": "XProject.Identity.Infrastructure",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 5
+}
