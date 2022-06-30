@@ -6,12 +6,12 @@ using System;
 using System.Linq;
 using System.Security.Claims;
 using IdentityModel;
-using XProject.IdentityServer.Data;
 using XProject.IdentityServer.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;
+using XProject.Identity.Infrastructure.Persistence;
 
 namespace XProject.IdentityServer
 {
