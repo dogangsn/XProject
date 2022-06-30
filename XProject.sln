@@ -10,10 +10,18 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E5BED43D-9373-4CE8-8663-FC198A9063A7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2E8071C6-620C-4D95-A389-33142DA693DF}"
+	ProjectSection(SolutionItems) = preProject
+		Note.txt = Note.txt
+		Port.txt = Port.txt
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XProject.IdentityServer", "Services\IdentityServer\XProject.IdentityServer\XProject.IdentityServer.csproj", "{81061310-0D2D-452D-8171-F239E1F15370}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XProject.Gateway", "ApiGateways\XProject.Gateway\XProject.Gateway.csproj", "{6719B689-EFF8-49D8-A5D2-9EEA7DDD07BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XProject.Gateway", "ApiGateways\XProject.Gateway\XProject.Gateway.csproj", "{6719B689-EFF8-49D8-A5D2-9EEA7DDD07BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Account", "Account", "{02A13A5F-D880-4211-BE38-6E10FCED07AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XProject.Account", "Services\Account\XProject.Account\XProject.Account.csproj", "{CC23EFDB-6B6A-49B9-954E-97CCFC81F022}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +37,10 @@ Global
 		{6719B689-EFF8-49D8-A5D2-9EEA7DDD07BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6719B689-EFF8-49D8-A5D2-9EEA7DDD07BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6719B689-EFF8-49D8-A5D2-9EEA7DDD07BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC23EFDB-6B6A-49B9-954E-97CCFC81F022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC23EFDB-6B6A-49B9-954E-97CCFC81F022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC23EFDB-6B6A-49B9-954E-97CCFC81F022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC23EFDB-6B6A-49B9-954E-97CCFC81F022}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +49,8 @@ Global
 		{522538BB-9F9A-4580-95C0-EE39EDB96217} = {E5BED43D-9373-4CE8-8663-FC198A9063A7}
 		{81061310-0D2D-452D-8171-F239E1F15370} = {522538BB-9F9A-4580-95C0-EE39EDB96217}
 		{6719B689-EFF8-49D8-A5D2-9EEA7DDD07BE} = {451B6B79-FBB5-4355-9ED0-996E1AC305AD}
+		{02A13A5F-D880-4211-BE38-6E10FCED07AC} = {E5BED43D-9373-4CE8-8663-FC198A9063A7}
+		{CC23EFDB-6B6A-49B9-954E-97CCFC81F022} = {02A13A5F-D880-4211-BE38-6E10FCED07AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2AA44BF5-C0BF-4EE7-BEC8-58C79A199D49}
