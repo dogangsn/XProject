@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using XProject.Identity.Infrastructure.Persistence;
+using XProject.Identity.Infrastructure;
 
 namespace XProject.IdentityServer
 {
