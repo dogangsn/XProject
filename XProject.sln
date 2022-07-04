@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XProject.Gateway", "ApiGate
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Account", "Account", "{02A13A5F-D880-4211-BE38-6E10FCED07AC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XProject.Account", "Services\Account\XProject.Account\XProject.Account.csproj", "{CC23EFDB-6B6A-49B9-954E-97CCFC81F022}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XProject.Account.Api", "Services\Account\XProject.Account\XProject.Account.Api.csproj", "{CC23EFDB-6B6A-49B9-954E-97CCFC81F022}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XProject.Identity.Application", "Services\IdentityServer\XProject.Identity.Application\XProject.Identity.Application.csproj", "{B1E795CA-83C4-4788-A304-5370E611F69F}"
 EndProject
@@ -29,7 +29,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XProject.Identity.Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{485C6ACA-E3BD-4B75-BD9A-0BBA4A02F4E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XProject.Shared", "Shared\XProject.Shared\XProject.Shared.csproj", "{F247E6C3-7BFB-4D75-9EFB-B30AF8EFECA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XProject.Shared", "Shared\XProject.Shared\XProject.Shared.csproj", "{F247E6C3-7BFB-4D75-9EFB-B30AF8EFECA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

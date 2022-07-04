@@ -10,3 +10,4 @@ D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructu
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\obj\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.dll
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\obj\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.pdb
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\obj\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.genruntimeconfig.cache
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\obj\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.csproj.AssemblyReference.cache

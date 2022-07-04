@@ -15,9 +15,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dogan\\Project\\XProject\\Services\\Account\\XProject.Account\\XProject.Account.csproj",
-      "projectName": "XProject.Account",
-      "projectPath": "D:\\Dogan\\Project\\XProject\\Services\\Account\\XProject.Account\\XProject.Account.csproj",
+      "projectUniqueName": "D:\\Dogan\\Project\\XProject\\Services\\Account\\XProject.Account\\XProject.Account.Api.csproj",
+      "projectName": "XProject.Account.Api",
+      "projectPath": "D:\\Dogan\\Project\\XProject\\Services\\Account\\XProject.Account\\XProject.Account.Api.csproj",
       "packagesPath": "C:\\Users\\DG\\.nuget\\packages\\",
       "outputPath": "D:\\Dogan\\Project\\XProject\\Services\\Account\\XProject.Account\\obj\\",
       "projectStyle": "PackageReference",

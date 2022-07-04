@@ -25,13 +25,11 @@ namespace XProject.IdentityServer.Controller
                 UserName = signupDto.UserName,
                 Email = signupDto.Email,    
             };
-
             var result = await _userManager.CreateAsync(user, signupDto.Password);
             if (!result.Succeeded)
             {
                 return BadRequest();
             }
-
             return Ok(result);
         }
     }
