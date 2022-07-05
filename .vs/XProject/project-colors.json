@@ -40,7 +40,12 @@
       "ProjectGuid": "f247e6c3-7bfb-4d75-9efb-b30af8efeca0",
       "DisplayName": "XProject.Shared",
       "ColorIndex": 6
+    },
+    "cc23efdb-6b6a-49b9-954e-97ccfc81f022": {
+      "ProjectGuid": "cc23efdb-6b6a-49b9-954e-97ccfc81f022",
+      "DisplayName": "XProject.Account.Api",
+      "ColorIndex": 7
     }
   },
-  "NextColorIndex": 7
+  "NextColorIndex": 8
 }
