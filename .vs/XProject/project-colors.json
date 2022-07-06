@@ -45,7 +45,22 @@
       "ProjectGuid": "cc23efdb-6b6a-49b9-954e-97ccfc81f022",
       "DisplayName": "XProject.Account.Api",
       "ColorIndex": 7
+    },
+    "944771a4-adeb-4020-b133-edbdf9996b47": {
+      "ProjectGuid": "944771a4-adeb-4020-b133-edbdf9996b47",
+      "DisplayName": "XProject.Account.Application",
+      "ColorIndex": 8
+    },
+    "75ee2dcc-90b7-4bac-a2d0-be9009785a9b": {
+      "ProjectGuid": "75ee2dcc-90b7-4bac-a2d0-be9009785a9b",
+      "DisplayName": "XProject.Account.Infrastructure",
+      "ColorIndex": 9
+    },
+    "a97d48cb-09c0-498b-88a0-514539f0cd7a": {
+      "ProjectGuid": "a97d48cb-09c0-498b-88a0-514539f0cd7a",
+      "DisplayName": "XProject.Account.Domain",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 8
+  "NextColorIndex": 11
 }

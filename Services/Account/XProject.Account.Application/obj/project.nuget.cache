@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "2mJvYE2dJMWszr9q1iXOE2UykoX3gB6a1XpPlvPCVbwBIdcm2CRSNMKH5CCN0s3l4IN3LaWUG8oL0rJBKXES2w==",
+  "dgSpecHash": "OZntBqFSZ5XQSSguslI9vJ56JIW6sFJVYefgpy0DK//zC1EDjtCPIeNNFy3ikVq0ljmmQvcxQ22gWiJbgoVJWQ==",
   "success": true,
   "projectFilePath": "D:\\Dogan\\Project\\XProject\\Services\\Account\\XProject.Account.Application\\XProject.Account.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\DG\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
