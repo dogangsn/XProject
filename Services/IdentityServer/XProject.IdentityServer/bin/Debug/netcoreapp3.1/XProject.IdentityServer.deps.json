@@ -32,6 +32,7 @@
       "XProject.IdentityServer/1.0.0": {
         "dependencies": {
           "IdentityServer4.AspNetIdentity": "4.0.0",
+          "MediatR": "10.0.1",
           "Microsoft.AspNetCore.Authentication.Google": "3.1.5",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.5",
@@ -416,6 +417,31 @@
         },
         "compile": {
           "lib/netstandard2.0/IdentityServer4.Storage.dll": {}
+        }
+      },
+      "MediatR/10.0.1": {
+        "dependencies": {
+          "MediatR.Contracts": "1.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        }
+      },
+      "MediatR.Contracts/1.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authentication.Google/3.1.5": {
@@ -2008,13 +2034,22 @@
           "IdentityServer4.EntityFramework.Storage": "4.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.5",
-          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.5"
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.5",
+          "XProject.Shared": "1.0.0"
         },
         "runtime": {
           "XProject.Identity.Infrastructure.dll": {}
         },
         "compile": {
           "XProject.Identity.Infrastructure.dll": {}
+        }
+      },
+      "XProject.Shared/1.0.0": {
+        "runtime": {
+          "XProject.Shared.dll": {}
+        },
+        "compile": {
+          "XProject.Shared.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -3646,6 +3681,20 @@
       "path": "identityserver4.storage/4.0.0",
       "hashPath": "identityserver4.storage.4.0.0.nupkg.sha512"
     },
+    "MediatR/10.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vnjbk4giDJzJelh34Ygt0eorApCKrRFB7j0pauFPY1oxfO3cEZ7FugBrIOjCM76SDGTOmPFfbfmVnz1t3iFrGA==",
+      "path": "mediatr/10.0.1",
+      "hashPath": "mediatr.10.0.1.nupkg.sha512"
+    },
+    "MediatR.Contracts/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NsRvOxthhkYml4DcBMyJsmym8C4MchioH7wxKVPEg7plFj9Euh/i4IcmZ3Gvgx6+K8obeuhPeJdoBl56wnuo3A==",
+      "path": "mediatr.contracts/1.0.1",
+      "hashPath": "mediatr.contracts.1.0.1.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Authentication.Google/3.1.5": {
       "type": "package",
       "serviceable": true,
@@ -4606,6 +4655,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "XProject.Identity.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "XProject.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

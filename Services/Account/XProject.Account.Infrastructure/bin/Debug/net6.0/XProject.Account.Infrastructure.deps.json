@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "XProject.Account.Infrastructure/1.0.0": {
+        "runtime": {
+          "XProject.Account.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "XProject.Account.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

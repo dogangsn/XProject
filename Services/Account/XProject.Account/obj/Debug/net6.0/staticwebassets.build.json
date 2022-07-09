@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "zkYLuW9QbWgiISQ3o2ZI1j9+JkpJTNFBAoQqBhXnz+Q=",
-  "Source": "XProject.Account",
-  "BasePath": "_content/XProject.Account",
+  "Hash": "VPe1y1JdIEEH8IFSam5XoIESgua8IDEhNbTxRMtKinw=",
+  "Source": "XProject.Account.Api",
+  "BasePath": "_content/XProject.Account.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

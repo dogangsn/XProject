@@ -3,11 +3,14 @@ D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructu
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\bin\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.runtimeconfig.dev.json
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\bin\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.dll
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\bin\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.pdb
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\bin\Debug\netcoreapp3.1\XProject.Shared.dll
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\bin\Debug\netcoreapp3.1\XProject.Shared.pdb
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\obj\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.csproj.AssemblyReference.cache
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\obj\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\obj\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.AssemblyInfoInputs.cache
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\obj\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.AssemblyInfo.cs
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\obj\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\obj\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.csproj.CopyComplete
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\obj\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.dll
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\obj\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.pdb
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\obj\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.genruntimeconfig.cache
-D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Infrastructure\obj\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.csproj.AssemblyReference.cache
