@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 using XProject.Shared.Enums;
 
@@ -17,6 +18,9 @@ namespace XProject.Identity.Infrastructure.Entities
         public string RoleId { get; set; }
         public bool? Passive { get; set; }
         public bool IsLicenceAccount { get; set; }
+
+        [ForeignKey("UserId")]
+        public virtual ApplicationUser User { get; set; }
 
     }
 }
