@@ -2150,13 +2150,24 @@
           "IdentityServer4.EntityFramework.Storage": "4.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.5",
-          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.5"
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.5",
+          "XProject.Shared": "1.0.0"
         },
         "compile": {
           "bin/placeholder/XProject.Identity.Infrastructure.dll": {}
         },
         "runtime": {
           "bin/placeholder/XProject.Identity.Infrastructure.dll": {}
+        }
+      },
+      "XProject.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/XProject.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/XProject.Shared.dll": {}
         }
       }
     }
@@ -7091,6 +7102,11 @@
       "type": "project",
       "path": "../XProject.Identity.Infrastructure/XProject.Identity.Infrastructure.csproj",
       "msbuildProject": "../XProject.Identity.Infrastructure/XProject.Identity.Infrastructure.csproj"
+    },
+    "XProject.Shared/1.0.0": {
+      "type": "project",
+      "path": "../../../Shared/XProject.Shared/XProject.Shared.csproj",
+      "msbuildProject": "../../../Shared/XProject.Shared/XProject.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {

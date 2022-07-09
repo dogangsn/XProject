@@ -17,4 +17,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\XProject.Shared\XProject.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

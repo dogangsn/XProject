@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    ".NETCoreApp,Version=v3.1": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": []
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
     "C:\\Users\\DG\\.nuget\\packages\\": {},
@@ -33,7 +33,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
@@ -42,8 +42,8 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -54,8 +54,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",

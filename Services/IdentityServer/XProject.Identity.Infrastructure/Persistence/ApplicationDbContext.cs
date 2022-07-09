@@ -19,6 +19,8 @@ namespace XProject.Identity.Infrastructure.Persistence
             : base(options)
         {
         }
+        public DbSet<Account> Accounts { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
