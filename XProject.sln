@@ -11,8 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2E8071C6-620C-4D95-A389-33142DA693DF}"
 	ProjectSection(SolutionItems) = preProject
-		Note.txt = Note.txt
-		Port.txt = Port.txt
+		Solution Items\Note.txt = Solution Items\Note.txt
+		Solution Items\Port.txt = Solution Items\Port.txt
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XProject.IdentityServer", "Services\IdentityServer\XProject.IdentityServer\XProject.IdentityServer.csproj", "{81061310-0D2D-452D-8171-F239E1F15370}"
@@ -31,11 +31,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{485C6A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XProject.Shared", "Shared\XProject.Shared\XProject.Shared.csproj", "{F247E6C3-7BFB-4D75-9EFB-B30AF8EFECA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XProject.Account.Application", "Services\Account\XProject.Account.Application\XProject.Account.Application.csproj", "{944771A4-ADEB-4020-B133-EDBDF9996B47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XProject.Account.Application", "Services\Account\XProject.Account.Application\XProject.Account.Application.csproj", "{944771A4-ADEB-4020-B133-EDBDF9996B47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XProject.Account.Infrastructure", "Services\Account\XProject.Account.Infrastructure\XProject.Account.Infrastructure.csproj", "{75EE2DCC-90B7-4BAC-A2D0-BE9009785A9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XProject.Account.Infrastructure", "Services\Account\XProject.Account.Infrastructure\XProject.Account.Infrastructure.csproj", "{75EE2DCC-90B7-4BAC-A2D0-BE9009785A9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XProject.Account.Domain", "Services\Account\XProject.Account.Domain\XProject.Account.Domain.csproj", "{A97D48CB-09C0-498B-88A0-514539F0CD7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XProject.Account.Domain", "Services\Account\XProject.Account.Domain\XProject.Account.Domain.csproj", "{A97D48CB-09C0-498B-88A0-514539F0CD7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
