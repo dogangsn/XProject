@@ -12,8 +12,12 @@
 
   <ItemGroup>
     <Folder Include="Mappings\" />
-    <Folder Include="Operations\Accounts\Commands\" />
     <Folder Include="Operations\Accounts\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\XProject.Shared\XProject.Shared.csproj" />
+    <ProjectReference Include="..\XProject.Account.Domain\XProject.Account.Domain.csproj" />
   </ItemGroup>
 
 </Project>
