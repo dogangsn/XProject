@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "nu8BGhy1VkWd99Jrac3IF4/RuD+hWO4JC3Bii+xpfZfC+xCaAoiTzpHy95eX3b5lWMjNY1qc36/ypw3r9u+yrw==",
+  "dgSpecHash": "+6zE+2UT2ECLjf0Dj0x02Kd+0Sp6se8RbT7wn20o4nDkuO69UthLmJfd9vBEevuoGi3zKzsCs/14w+8008U9Lw==",
   "success": true,
   "projectFilePath": "D:\\Dogan\\Project\\XProject\\Services\\Account\\XProject.Account.Infrastructure\\XProject.Account.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\6.0.0\\microsoft.extensions.configuration.fileextensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.configuration.json\\6.0.0\\microsoft.extensions.configuration.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\6.0.0\\microsoft.extensions.fileproviders.physical.6.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0\\microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
