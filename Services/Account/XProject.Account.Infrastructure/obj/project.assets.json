@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "XProject.Account.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/XProject.Account.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/XProject.Account.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "XProject.Account.Domain/1.0.0": {
+      "type": "project",
+      "path": "../XProject.Account.Domain/XProject.Account.Domain.csproj",
+      "msbuildProject": "../XProject.Account.Domain/XProject.Account.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "XProject.Account.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\DG\\.nuget\\packages\\": {},
@@ -44,7 +63,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Dogan\\Project\\XProject\\Services\\Account\\XProject.Account.Domain\\XProject.Account.Domain.csproj": {
+              "projectPath": "D:\\Dogan\\Project\\XProject\\Services\\Account\\XProject.Account.Domain\\XProject.Account.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
