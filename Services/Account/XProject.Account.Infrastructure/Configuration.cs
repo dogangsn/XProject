@@ -14,9 +14,9 @@ namespace XProject.Account.Infrastructure
             get
             {
                 ConfigurationManager configurationManager = new();
-                configurationManager.SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../../Presentation/ETicaretAPI.API"));
+                configurationManager.SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../XProject.Account/XProject.Account.Api"));
                 configurationManager.AddJsonFile("appsettings.json");
-                return configurationManager.GetConnectionString("PostgreSQL");
+                return configurationManager.GetConnectionString("ConnectionString");
             }
         }
 

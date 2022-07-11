@@ -86,6 +86,7 @@ namespace XProject.Account.Infrastructure.Repositories
             Table.RemoveRange(model);
             return true;
         }
+
         public bool UpdateAsync(T model)
         {
             EntityEntry<T> entityEntry = Table.Update(model);
