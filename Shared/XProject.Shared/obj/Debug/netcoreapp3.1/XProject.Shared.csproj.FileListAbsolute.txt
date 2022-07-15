@@ -7,3 +7,4 @@ D:\Dogan\Project\XProject\Shared\XProject.Shared\obj\Debug\netcoreapp3.1\XProjec
 D:\Dogan\Project\XProject\Shared\XProject.Shared\obj\Debug\netcoreapp3.1\XProject.Shared.csproj.CoreCompileInputs.cache
 D:\Dogan\Project\XProject\Shared\XProject.Shared\obj\Debug\netcoreapp3.1\XProject.Shared.dll
 D:\Dogan\Project\XProject\Shared\XProject.Shared\obj\Debug\netcoreapp3.1\XProject.Shared.pdb
+D:\Dogan\Project\XProject\Shared\XProject.Shared\obj\Debug\netcoreapp3.1\XProject.Shared.csproj.AssemblyReference.cache

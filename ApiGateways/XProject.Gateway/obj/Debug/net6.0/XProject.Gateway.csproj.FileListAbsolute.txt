@@ -30,3 +30,4 @@ D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\XProject
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\ref\XProject.Gateway.dll
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\XProject.Gateway.pdb
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\XProject.Gateway.genruntimeconfig.cache
+D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\XProject.Gateway.csproj.AssemblyReference.cache

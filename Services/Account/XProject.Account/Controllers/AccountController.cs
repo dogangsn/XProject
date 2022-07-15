@@ -1,6 +1,8 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using XProject.Account.Application.Operations.Accounts.Commands;
 
 namespace XProject.Account.Api.Controllers
 {
@@ -14,9 +16,13 @@ namespace XProject.Account.Api.Controllers
             _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
         }
 
-
-
-
+        [HttpPost(Name = "CreateDatabase")]
+        [AllowAnonymous]
+        public async Task<IActionResult> CreateDatabase([FromBody] CreateCustomerDatabaseCommand command)
+        {
+            var result = await _mediator.Send(command);
+            return Ok(result);
+        }
 
     }
 }

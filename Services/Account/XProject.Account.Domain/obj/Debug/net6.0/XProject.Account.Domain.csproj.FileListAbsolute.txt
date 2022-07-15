@@ -9,3 +9,4 @@ D:\Dogan\Project\XProject\Services\Account\XProject.Account.Domain\obj\Debug\net
 D:\Dogan\Project\XProject\Services\Account\XProject.Account.Domain\obj\Debug\net6.0\XProject.Account.Domain.dll
 D:\Dogan\Project\XProject\Services\Account\XProject.Account.Domain\obj\Debug\net6.0\ref\XProject.Account.Domain.dll
 D:\Dogan\Project\XProject\Services\Account\XProject.Account.Domain\obj\Debug\net6.0\XProject.Account.Domain.pdb
+D:\Dogan\Project\XProject\Services\Account\XProject.Account.Domain\obj\Debug\net6.0\XProject.Account.Domain.csproj.AssemblyReference.cache

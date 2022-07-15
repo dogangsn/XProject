@@ -9,3 +9,7 @@ D:\Dogan\Project\XProject\Services\Account\XProject.Account.Infrastructure\obj\D
 D:\Dogan\Project\XProject\Services\Account\XProject.Account.Infrastructure\obj\Debug\net6.0\XProject.Account.Infrastructure.dll
 D:\Dogan\Project\XProject\Services\Account\XProject.Account.Infrastructure\obj\Debug\net6.0\ref\XProject.Account.Infrastructure.dll
 D:\Dogan\Project\XProject\Services\Account\XProject.Account.Infrastructure\obj\Debug\net6.0\XProject.Account.Infrastructure.pdb
+D:\Dogan\Project\XProject\Services\Account\XProject.Account.Infrastructure\bin\Debug\net6.0\XProject.Account.Domain.dll
+D:\Dogan\Project\XProject\Services\Account\XProject.Account.Infrastructure\bin\Debug\net6.0\XProject.Account.Domain.pdb
+D:\Dogan\Project\XProject\Services\Account\XProject.Account.Infrastructure\obj\Debug\net6.0\XProject.Account.Infrastructure.csproj.AssemblyReference.cache
+D:\Dogan\Project\XProject\Services\Account\XProject.Account.Infrastructure\obj\Debug\net6.0\XProject.Account.Infrastructure.csproj.CopyComplete
