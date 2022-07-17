@@ -43,3 +43,8 @@ D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\XPr
 D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\XProject.Account.Infrastructure.pdb
 D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\XProject.Account.Domain.pdb
 D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\XProject.Shared.pdb
+D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Dogan\Project\XProject\Services\Account\XProject.Account\obj\Debug\net6.0\XProject.Account.Api.MvcApplicationPartsAssemblyInfo.cs

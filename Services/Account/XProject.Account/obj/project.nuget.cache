@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5l6kELTL6ZM69459JPmeLCkpsQ+hCfoUkxldaMSaHAmBGjPvSbsyTZSYwJOTJQ1JGj+YmsRya2qAw1Q8DcUtow==",
+  "dgSpecHash": "YCwhG+QXAHfn0f+idl/6N+z6/jtYRVeJNXEmwJlFmK6s07qdSwvDtLVu7V4Fnscu5byZPyFYYNUbe3LhGLtyMg==",
   "success": true,
   "projectFilePath": "D:\\Dogan\\Project\\XProject\\Services\\Account\\XProject.Account\\XProject.Account.Api.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\DG\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.6\\microsoft.entityframeworkcore.6.0.6.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.6\\microsoft.entityframeworkcore.abstractions.6.0.6.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.6\\microsoft.entityframeworkcore.analyzers.6.0.6.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
@@ -32,6 +33,11 @@
     "C:\\Users\\DG\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.10.0\\microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\swashbuckle.aspnetcore\\6.3.2\\swashbuckle.aspnetcore.6.3.2.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.2\\swashbuckle.aspnetcore.swagger.6.3.2.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.2\\swashbuckle.aspnetcore.swaggergen.6.3.2.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.2\\swashbuckle.aspnetcore.swaggerui.6.3.2.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",

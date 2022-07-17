@@ -24,12 +24,12 @@ namespace XProject.Account.Application.Operations.Accounts.Commands
     public class CreateCustomerDatabaseResponseHandler : IRequestHandler<CreateCustomerDatabaseCommand, Response<bool>>
     {
         private readonly IMediator _mediator;
-        private readonly IUnitOfWork _uof;
+        //private readonly IUnitOfWork _uof;
 
         public CreateCustomerDatabaseResponseHandler(IMediator mediator, IUnitOfWork uof)
         {
             _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
-            _uof = uof?? throw new ArgumentNullException(nameof(uof));
+            //_uof = uof?? throw new ArgumentNullException(nameof(uof));
         }
 
         public async Task<Response<bool>> Handle(CreateCustomerDatabaseCommand request, CancellationToken cancellationToken)
