@@ -13,3 +13,5 @@ D:\Dogan\Project\XProject\Services\Account\XProject.Account.Infrastructure\bin\D
 D:\Dogan\Project\XProject\Services\Account\XProject.Account.Infrastructure\bin\Debug\net6.0\XProject.Account.Domain.pdb
 D:\Dogan\Project\XProject\Services\Account\XProject.Account.Infrastructure\obj\Debug\net6.0\XProject.Account.Infrastructure.csproj.AssemblyReference.cache
 D:\Dogan\Project\XProject\Services\Account\XProject.Account.Infrastructure\obj\Debug\net6.0\XProject.Account.Infrastructure.csproj.CopyComplete
+D:\Dogan\Project\XProject\Services\Account\XProject.Account.Infrastructure\bin\Debug\net6.0\XProject.Account.Infrastructure.runtimeconfig.json
+D:\Dogan\Project\XProject\Services\Account\XProject.Account.Infrastructure\obj\Debug\net6.0\XProject.Account.Infrastructure.genruntimeconfig.cache
