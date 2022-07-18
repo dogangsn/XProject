@@ -32,5 +32,15 @@ namespace XProject.IdentityServer.Controller
             }
             return Ok(result);
         }
+
+
+        [HttpPost]
+        public async Task<IActionResult> SignIn()
+        {
+
+            return Ok();
+        }
+
+
     }
 }
