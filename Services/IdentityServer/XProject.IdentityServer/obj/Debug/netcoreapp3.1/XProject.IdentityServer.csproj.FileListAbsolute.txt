@@ -132,7 +132,6 @@ D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\De
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.RazorAssemblyInfo.cs
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\appsettings.json
-D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\appsettings.Local.json
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\XProject.IdentityServer.StaticWebAssets.xml
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\XProject.IdentityServer.exe
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\XProject.IdentityServer.deps.json

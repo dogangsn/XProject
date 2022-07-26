@@ -27,4 +27,10 @@
   <ItemGroup>
     <ProjectReference Include="..\XProject.Identity.Infrastructure\XProject.Identity.Infrastructure.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.Local.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 </Project>
