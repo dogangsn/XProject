@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using XProject.Account.Domain.Entities;
 
 namespace XProject.Account.Infrastructure.Persistence
 {
@@ -12,6 +13,7 @@ namespace XProject.Account.Infrastructure.Persistence
         public XProjectDbContext(DbContextOptions options) : base(options)
         { }
 
+        public DbSet<Products> Products { get; set; }
 
     }
 }
