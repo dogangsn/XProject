@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dZtB13IVCbcSsDvLD23+Nh0E+O4MiaJkf/uDOv/qC+/VRkf1OJQkf0SYttG271NBDWM85tK+IYVWdMcrAxkZog==",
+  "dgSpecHash": "xc1mfU/txXslJAek9ZW+HxFujr7haLlslENm7FGLFFwI4cnsmKPciso6ruh11eTqgAE0T8+jKfptpVir3EphFw==",
   "success": true,
   "projectFilePath": "D:\\Dogan\\Project\\XProject\\Services\\IdentityServer\\XProject.IdentityServer\\XProject.IdentityServer.csproj",
   "expectedPackageFiles": [
@@ -149,7 +149,8 @@
     "C:\\Users\\DG\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\DG\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\DG\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.27\\microsoft.netcore.app.host.win-x64.3.1.27.nupkg.sha512"
   ],
   "logs": []
 }

@@ -15,6 +15,8 @@ builder.Services.AddApplicationServices();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.Configure<XProject.Account.Application.Models.Settings.TenantSettings>(builder.Configuration.GetSection("TenantSettings"));
+
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
