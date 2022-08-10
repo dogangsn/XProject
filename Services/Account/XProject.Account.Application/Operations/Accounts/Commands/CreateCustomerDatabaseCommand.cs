@@ -17,7 +17,6 @@ namespace XProject.Account.Application.Operations.Accounts.Commands
         public string Lastname { get; set; }
         public string CompanyName { get; set; }
         public string Phone { get; set; }
-
     }
 
 
@@ -40,8 +39,7 @@ namespace XProject.Account.Application.Operations.Accounts.Commands
 
 
 
-
-
+                _uof.MigrateDatabase("");
             }
             catch (Exception ex)
             {

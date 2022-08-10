@@ -11,6 +11,7 @@ namespace XProject.Account.Infrastructure.Repositories
     public class UnitOfWork : IUnitOfWork
     {
         protected XProjectDbContext _context;
+
         public UnitOfWork(XProjectDbContext context)
         {
             _context = context;
