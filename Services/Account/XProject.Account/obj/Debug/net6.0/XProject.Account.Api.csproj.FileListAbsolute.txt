@@ -4,7 +4,6 @@ D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\XPr
 D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\XProject.Account.Api.deps.json
 D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\XProject.Account.Api.runtimeconfig.json
 D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\XProject.Account.Api.dll
-D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\ref\XProject.Account.Api.dll
 D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\XProject.Account.Api.pdb
 D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\MediatR.dll
 D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\MediatR.Contracts.dll
@@ -71,3 +70,4 @@ D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\run
 D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Dogan\Project\XProject\Services\Account\XProject.Account\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Dogan\Project\XProject\Services\Account\XProject.Account\obj\Debug\net6.0\refint\XProject.Account.Api.dll

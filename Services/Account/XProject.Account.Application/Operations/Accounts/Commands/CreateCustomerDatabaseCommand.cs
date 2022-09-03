@@ -35,11 +35,7 @@ namespace XProject.Account.Application.Operations.Accounts.Commands
         {
             try
             {
-
-
-
-
-                _uof.MigrateDatabase("");
+                 await _uof.MigrateDatabase("");
             }
             catch (Exception ex)
             {

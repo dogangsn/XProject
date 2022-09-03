@@ -1,6 +1,5 @@
 D:\Dogan\Project\XProject\Services\Account\XProject.Account.Application\bin\Debug\net6.0\XProject.Account.Application.deps.json
 D:\Dogan\Project\XProject\Services\Account\XProject.Account.Application\bin\Debug\net6.0\XProject.Account.Application.dll
-D:\Dogan\Project\XProject\Services\Account\XProject.Account.Application\bin\Debug\net6.0\ref\XProject.Account.Application.dll
 D:\Dogan\Project\XProject\Services\Account\XProject.Account.Application\bin\Debug\net6.0\XProject.Account.Application.pdb
 D:\Dogan\Project\XProject\Services\Account\XProject.Account.Application\obj\Debug\net6.0\XProject.Account.Application.GeneratedMSBuildEditorConfig.editorconfig
 D:\Dogan\Project\XProject\Services\Account\XProject.Account.Application\obj\Debug\net6.0\XProject.Account.Application.AssemblyInfoInputs.cache
@@ -15,3 +14,4 @@ D:\Dogan\Project\XProject\Services\Account\XProject.Account.Application\bin\Debu
 D:\Dogan\Project\XProject\Services\Account\XProject.Account.Application\bin\Debug\net6.0\XProject.Account.Domain.pdb
 D:\Dogan\Project\XProject\Services\Account\XProject.Account.Application\obj\Debug\net6.0\XProject.Account.Application.csproj.AssemblyReference.cache
 D:\Dogan\Project\XProject\Services\Account\XProject.Account.Application\obj\Debug\net6.0\XProject.Account.Application.csproj.CopyComplete
+D:\Dogan\Project\XProject\Services\Account\XProject.Account.Application\obj\Debug\net6.0\refint\XProject.Account.Application.dll

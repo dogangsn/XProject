@@ -6,7 +6,6 @@ D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\bin\Debug\net6.0\XProject
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\bin\Debug\net6.0\XProject.Gateway.deps.json
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\bin\Debug\net6.0\XProject.Gateway.runtimeconfig.json
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\bin\Debug\net6.0\XProject.Gateway.dll
-D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\bin\Debug\net6.0\ref\XProject.Gateway.dll
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\bin\Debug\net6.0\XProject.Gateway.pdb
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\bin\Debug\net6.0\FluentValidation.dll
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
@@ -31,3 +30,4 @@ D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\ref\XPro
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\XProject.Gateway.pdb
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\XProject.Gateway.genruntimeconfig.cache
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\XProject.Gateway.csproj.AssemblyReference.cache
+D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\refint\XProject.Gateway.dll
