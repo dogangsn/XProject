@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.IdentityModel.Tokens;
 using XProject.Account.Application;
 using XProject.Account.Infrastructure;
+using XProject.Shared.Accounts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,10 +13,11 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddPersistenceServices(builder.Configuration);
 builder.Services.AddApplicationServices();
 
+builder.Services.Configure<TenantDbSettings>(builder.Configuration.GetSection("TemantDbSettings"));
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.Configure<XProject.Account.Application.Models.Settings.TenantSettings>(builder.Configuration.GetSection("TemantDbSettings"));
 
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>

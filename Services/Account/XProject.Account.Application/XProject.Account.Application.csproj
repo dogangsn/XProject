@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <Folder Include="Mappings\" />
-    <Folder Include="Models\Settings\" />
+    <Folder Include="Models\" />
     <Folder Include="Operations\Accounts\Queries\" />
   </ItemGroup>
 

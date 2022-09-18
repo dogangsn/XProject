@@ -233,7 +233,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.6"
+          "Microsoft.EntityFrameworkCore": "6.0.6",
+          "XProject.Shared": "1.0.0"
         },
         "compile": {
           "bin/placeholder/XProject.Account.Domain.dll": {}

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MediatR;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +11,11 @@ namespace XProject.Account.Infrastructure.Persistence
 {
     public class XProjectDbContext : DbContext
     {
-        public XProjectDbContext(DbContextOptions options) : base(options)
-        { }
+        private readonly IMediator _mediator;
+        public XProjectDbContext(DbContextOptions options, IMediator mediator) : base(options)
+        { 
+            _mediator = mediator;   
+        }
 
         public DbSet<Products> Products { get; set; }
 

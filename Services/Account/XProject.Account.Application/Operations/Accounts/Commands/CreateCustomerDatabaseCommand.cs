@@ -1,10 +1,12 @@
 ﻿using MediatR;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using XProject.Account.Domain.Contracts;
+using XProject.Shared.Accounts;
 using XProject.Shared.Dtos;
 
 namespace XProject.Account.Application.Operations.Accounts.Commands
@@ -24,18 +26,28 @@ namespace XProject.Account.Application.Operations.Accounts.Commands
     {
         private readonly IMediator _mediator;
         private readonly IUnitOfWork _uof;
+        private readonly TenantDbSettings _tenantSettings;
 
-        public CreateCustomerDatabaseResponseHandler(IMediator mediator, IUnitOfWork uof)
+        public CreateCustomerDatabaseResponseHandler(IMediator mediator, IUnitOfWork uof, IOptions<TenantDbSettings> tenantSettings)
         {
             _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
             _uof = uof ?? throw new ArgumentNullException(nameof(uof));
+            _tenantSettings = tenantSettings.Value;
         }
 
         public async Task<Response<bool>> Handle(CreateCustomerDatabaseCommand request, CancellationToken cancellationToken)
         {
             try
             {
-                 await _uof.MigrateDatabase("");
+
+                var tenant = new Tenant
+                {
+                    Company = request.CompanyName,
+                    Id = Guid.NewGuid(),
+                    _tenant = _tenantSettings
+                };
+
+                 await _uof.MigrateDatabase(tenant);
             }
             catch (Exception ex)
             {

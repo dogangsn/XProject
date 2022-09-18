@@ -8,12 +8,16 @@
     ".NETCoreApp,Version=v6.0": {
       "XProject.Account.Infrastructure/1.0.0": {
         "dependencies": {
+          "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
           "Microsoft.EntityFrameworkCore": "6.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.6",
           "Microsoft.Extensions.Configuration": "6.0.1",
+          "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "6.0.0",
+          "XProject.Account.Application": "1.0.0",
           "XProject.Account.Domain": "1.0.0"
         },
         "runtime": {
@@ -25,6 +29,37 @@
           "lib/netstandard2.0/Humanizer.dll": {
             "assemblyVersion": "2.8.0.0",
             "fileVersion": "2.8.26.1919"
+          }
+        }
+      },
+      "MediatR/10.0.1": {
+        "dependencies": {
+          "MediatR.Contracts": "1.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1.0"
+          }
+        }
+      },
+      "MediatR.Contracts/1.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
+        }
+      },
+      "MediatR.Extensions.Microsoft.DependencyInjection/10.0.1": {
+        "dependencies": {
+          "MediatR": "10.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1.0"
           }
         }
       },
@@ -203,6 +238,17 @@
           }
         }
       },
+      "Microsoft.Extensions.Configuration.Binder/6.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration.FileExtensions/6.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "6.0.1",
@@ -315,6 +361,21 @@
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/6.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0",
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
           }
@@ -572,12 +633,28 @@
           }
         }
       },
+      "XProject.Account.Application/1.0.0": {
+        "dependencies": {
+          "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
+          "XProject.Account.Domain": "1.0.0",
+          "XProject.Shared": "1.0.0"
+        },
+        "runtime": {
+          "XProject.Account.Application.dll": {}
+        }
+      },
       "XProject.Account.Domain/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.6"
+          "Microsoft.EntityFrameworkCore": "6.0.6",
+          "XProject.Shared": "1.0.0"
         },
         "runtime": {
           "XProject.Account.Domain.dll": {}
+        }
+      },
+      "XProject.Shared/1.0.0": {
+        "runtime": {
+          "XProject.Shared.dll": {}
         }
       }
     }
@@ -594,6 +671,27 @@
       "sha512": "sha512-OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "path": "humanizer.core/2.8.26",
       "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
+    },
+    "MediatR/10.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vnjbk4giDJzJelh34Ygt0eorApCKrRFB7j0pauFPY1oxfO3cEZ7FugBrIOjCM76SDGTOmPFfbfmVnz1t3iFrGA==",
+      "path": "mediatr/10.0.1",
+      "hashPath": "mediatr.10.0.1.nupkg.sha512"
+    },
+    "MediatR.Contracts/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NsRvOxthhkYml4DcBMyJsmym8C4MchioH7wxKVPEg7plFj9Euh/i4IcmZ3Gvgx6+K8obeuhPeJdoBl56wnuo3A==",
+      "path": "mediatr.contracts/1.0.1",
+      "hashPath": "mediatr.contracts.1.0.1.nupkg.sha512"
+    },
+    "MediatR.Extensions.Microsoft.DependencyInjection/10.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mYdfMvpkahCAj4tRfBoeMlUBZa2WthaONdQ4y5TtIyxcZYb5e7AE7c1eITTZVWcQhguxvD8AdExdaiAW6RhrVA==",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/10.0.1",
+      "hashPath": "mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512"
     },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
@@ -693,6 +791,13 @@
       "path": "microsoft.extensions.configuration.abstractions/6.0.0",
       "hashPath": "microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Configuration.Binder/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b3ErKzND8LIC7o08QAVlKfaEIYEvLJbtmVbFZVBRXeu9YkKfSSzLZfR1SUfQPBIy9mKLhEtJgGYImkcMNaKE0A==",
+      "path": "microsoft.extensions.configuration.binder/6.0.0",
+      "hashPath": "microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.Configuration.FileExtensions/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -762,6 +867,13 @@
       "sha512": "sha512-dzXN0+V1AyjOe2xcJ86Qbo233KHuLEY0njf/P2Kw8SfJU+d45HNS2ctJdnEnrWbM9Ye2eFgaC5Mj9otRMU6IsQ==",
       "path": "microsoft.extensions.options/6.0.0",
       "hashPath": "microsoft.extensions.options.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options.ConfigurationExtensions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bXWINbTn0vC0FYc9GaQTISbxhQLAMrvtbuvD9N6JelEaIS/Pr62wUCinrq5bf1WRBGczt1v4wDhxFtVFNcMdUQ==",
+      "path": "microsoft.extensions.options.configurationextensions/6.0.0",
+      "hashPath": "microsoft.extensions.options.configurationextensions.6.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Primitives/6.0.0": {
       "type": "package",
@@ -945,7 +1057,17 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
+    "XProject.Account.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "XProject.Account.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "XProject.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

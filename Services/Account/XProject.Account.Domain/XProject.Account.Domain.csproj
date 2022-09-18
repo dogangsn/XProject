@@ -15,4 +15,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\XProject.Shared\XProject.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

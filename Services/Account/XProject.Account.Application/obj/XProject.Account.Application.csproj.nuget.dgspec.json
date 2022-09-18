@@ -118,7 +118,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Dogan\\Project\\XProject\\Shared\\XProject.Shared\\XProject.Shared.csproj": {
+                "projectPath": "D:\\Dogan\\Project\\XProject\\Shared\\XProject.Shared\\XProject.Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

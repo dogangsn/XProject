@@ -194,6 +194,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "XProject.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/XProject.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/XProject.Shared.dll": {}
+        }
       }
     }
   },
@@ -520,11 +530,17 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "XProject.Shared/1.0.0": {
+      "type": "project",
+      "path": "../../../Shared/XProject.Shared/XProject.Shared.csproj",
+      "msbuildProject": "../../../Shared/XProject.Shared/XProject.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.EntityFrameworkCore >= 6.0.6"
+      "Microsoft.EntityFrameworkCore >= 6.0.6",
+      "XProject.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -568,7 +584,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Dogan\\Project\\XProject\\Shared\\XProject.Shared\\XProject.Shared.csproj": {
+              "projectPath": "D:\\Dogan\\Project\\XProject\\Shared\\XProject.Shared\\XProject.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

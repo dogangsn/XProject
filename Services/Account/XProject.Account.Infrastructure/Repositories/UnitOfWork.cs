@@ -1,20 +1,25 @@
-﻿using System;
+﻿using MediatR;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using XProject.Account.Domain.Contracts;
 using XProject.Account.Infrastructure.Persistence;
+using XProject.Shared.Accounts;
 
 namespace XProject.Account.Infrastructure.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {
         protected XProjectDbContext _context;
+        private readonly IMediator _mediator;
 
-        public UnitOfWork(XProjectDbContext context)
+        public UnitOfWork(XProjectDbContext context, IMediator mediator)
         {
             _context = context;
+            _mediator = mediator;
         }
 
         #region Dispose
@@ -40,9 +45,14 @@ namespace XProject.Account.Infrastructure.Repositories
 
         #endregion
 
-        public Task MigrateDatabase(string connectionString)
+        public async Task MigrateDatabase(Tenant _tenant)
         {
-            throw new NotImplementedException();
+            var builder = new DbContextOptionsBuilder<XProjectDbContext>();
+            builder.UseSqlServer(_tenant.ConnectionString);
+            using (var db = new XProjectDbContext(builder.Options, _mediator))
+            {
+                await db.Database.MigrateAsync();
+            }
         }
 
     }

@@ -15,7 +15,7 @@ namespace XProject.Account.Application
         {
             collection.AddMediatR(Assembly.GetExecutingAssembly());
             //collection.AddHttpClient();
-      
+
         }
     }
 }
