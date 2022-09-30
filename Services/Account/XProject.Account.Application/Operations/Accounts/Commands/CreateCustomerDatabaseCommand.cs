@@ -39,14 +39,12 @@ namespace XProject.Account.Application.Operations.Accounts.Commands
         {
             try
             {
-
                 var tenant = new Tenant
                 {
                     Company = request.CompanyName,
                     Id = Guid.NewGuid(),
                     _tenant = _tenantSettings
                 };
-
                  await _uof.MigrateDatabase(tenant);
             }
             catch (Exception ex)
