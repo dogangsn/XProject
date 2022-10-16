@@ -13,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using XProject.Identity.Infrastructure.Persistence;
 using XProject.Identity.Infrastructure;
+using XProject.Identity.Infrastructure.Extentions;
 
 namespace XProject.IdentityServer
 {
@@ -33,6 +34,9 @@ namespace XProject.IdentityServer
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+
+            services.AddInfrastructureServices(Configuration);
 
             //services.AddDefaultIdentity<IdentityUser>().AddRoles<IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
             ////services.AddInfrastructureServices(Configuration);

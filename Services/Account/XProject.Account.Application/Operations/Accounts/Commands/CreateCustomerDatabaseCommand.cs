@@ -45,7 +45,7 @@ namespace XProject.Account.Application.Operations.Accounts.Commands
                     Id = Guid.NewGuid(),
                     _tenant = _tenantSettings
                 };
-                 await _uof.MigrateDatabase(tenant);
+                await _uof.MigrateDatabase(tenant);
             }
             catch (Exception ex)
             {
