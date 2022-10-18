@@ -4,7 +4,8 @@ using System.Text;
 
 namespace XProject.Identity.Infrastructure.Repositories
 {
-    internal interface IRepository
+    public interface IRepository <T> where T : class
     {
+        IUnitOfWork UnitOfWork { get; }
     }
 }

@@ -4,7 +4,13 @@ using System.Text;
 
 namespace XProject.Identity.Infrastructure.Repositories
 {
-    internal interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
+        void CreateTransaction();
+        void Commit();
+        void Rollback();
+        int Execute(string query, object parameters);
+        List<T> Query<T>(string query, object parameters);
+        List<T> Query<T>(string query);
     }
 }

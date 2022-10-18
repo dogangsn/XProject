@@ -4,7 +4,8 @@ using System.Text;
 
 namespace XProject.Identity.Infrastructure.Repositories
 {
-    internal class RepositoryBase
+    public class RepositoryBase<T> : IRepository<T> where T : class
     {
+        public IUnitOfWork UnitOfWork => throw new NotImplementedException();
     }
 }

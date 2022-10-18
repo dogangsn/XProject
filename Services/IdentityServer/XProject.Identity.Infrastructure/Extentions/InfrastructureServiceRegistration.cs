@@ -1,6 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -9,6 +10,8 @@ using System.Reflection;
 using System.Text;
 using XProject.Identity.Infrastructure.Entities;
 using XProject.Identity.Infrastructure.Persistence;
+using XProject.Identity.Infrastructure.Repositories;
+using XProject.Identity.Infrastructure.Services;
 
 namespace XProject.Identity.Infrastructure.Extentions
 {
@@ -37,9 +40,32 @@ namespace XProject.Identity.Infrastructure.Extentions
             services.AddScoped(typeof(IRepository<>), typeof(RepositoryBase<>));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
+
             services.AddTransient<IAccountService, AccountService>();
 
+            var builder = services.AddIdentityServer(options =>
+            {
+                options.Events.RaiseErrorEvents = true;
+                options.Events.RaiseInformationEvents = true;
+                options.Events.RaiseFailureEvents = true;
+                options.Events.RaiseSuccessEvents = true;
+                options.EmitStaticAudienceClaim = true;
+            })
+            .AddConfigurationStore(options =>
+            {
+                options.ConfigureDbContext = b => b.UseSqlServer(connectionString, sql => sql.MigrationsAssembly(migrationsAssembly));
+            })
+            .AddOperationalStore(options =>
+            {
+                options.ConfigureDbContext = b => b.UseSqlServer(connectionString, sql => sql.MigrationsAssembly(migrationsAssembly));
+            })
+            .AddAspNetIdentity<ApplicationUser>();
+
+            builder.AddDeveloperSigningCredential();
+            builder.AddResourceOwnerValidator<PasswordValidatorService>();
+
+
             return services;
-        }  
+        }
     }
 }
