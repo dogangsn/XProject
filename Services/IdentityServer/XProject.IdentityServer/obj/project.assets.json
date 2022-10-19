@@ -15,6 +15,20 @@
           "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
+      "EFCore.NamingConventions/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.1",
+          "Microsoft.EntityFrameworkCore.Relational": "3.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/EFCore.NamingConventions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/EFCore.NamingConventions.dll": {}
+        }
+      },
       "IdentityModel/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2129,6 +2143,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "EFCore.NamingConventions": "1.1.1",
           "IdentityServer4.AspNetIdentity": "4.0.0",
           "IdentityServer4.EntityFramework": "4.0.0",
           "IdentityServer4.EntityFramework.Storage": "4.0.0",
@@ -2172,6 +2187,18 @@
         "lib/netstandard2.0/AutoMapper.dll",
         "lib/netstandard2.0/AutoMapper.pdb",
         "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "EFCore.NamingConventions/1.1.1": {
+      "sha512": "BSQ3zsqVOC8+cX86vTr4UviIqdYXvW0Br8nXfLyXXkkvgfQc8vJzpSxobYxIL15shXsgiYfr2BEJCIVzPBabOg==",
+      "type": "package",
+      "path": "efcore.namingconventions/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "efcore.namingconventions.1.1.1.nupkg.sha512",
+        "efcore.namingconventions.nuspec",
+        "lib/netstandard2.0/EFCore.NamingConventions.dll"
       ]
     },
     "IdentityModel/4.3.0": {
@@ -7195,12 +7222,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.27, 3.1.27]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"

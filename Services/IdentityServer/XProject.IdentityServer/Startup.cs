@@ -75,41 +75,41 @@ namespace XProject.IdentityServer
             //    });
 
 
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-               .AddEntityFrameworkStores<ApplicationDbContext>()
-               .AddDefaultTokenProviders();
+            //services.AddIdentity<ApplicationUser, IdentityRole>()
+            //   .AddEntityFrameworkStores<ApplicationDbContext>()
+            //   .AddDefaultTokenProviders();
 
-            var builder = services.AddIdentityServer(options =>
-            {
-                options.Events.RaiseErrorEvents = true;
-                options.Events.RaiseInformationEvents = true;
-                options.Events.RaiseFailureEvents = true;
-                options.Events.RaiseSuccessEvents = true;
+            //var builder = services.AddIdentityServer(options =>
+            //{
+            //    options.Events.RaiseErrorEvents = true;
+            //    options.Events.RaiseInformationEvents = true;
+            //    options.Events.RaiseFailureEvents = true;
+            //    options.Events.RaiseSuccessEvents = true;
 
-                // see https://identityserver4.readthedocs.io/en/latest/topics/resources.html
-                options.EmitStaticAudienceClaim = true;
-            })
-                .AddInMemoryIdentityResources(Config.IdentityResources)
-                .AddInMemoryApiResources(Config.ApiResources)
-                .AddInMemoryApiScopes(Config.ApiScopes)
-                .AddInMemoryClients(Config.Clients)
-                .AddAspNetIdentity<ApplicationUser>();
+            //    // see https://identityserver4.readthedocs.io/en/latest/topics/resources.html
+            //    options.EmitStaticAudienceClaim = true;
+            //})
+            //    .AddInMemoryIdentityResources(Config.IdentityResources)
+            //    .AddInMemoryApiResources(Config.ApiResources)
+            //    .AddInMemoryApiScopes(Config.ApiScopes)
+            //    .AddInMemoryClients(Config.Clients)
+            //    .AddAspNetIdentity<ApplicationUser>();
 
-            //builder.AddResourceOwnerValidator<IdentityResourceOwnerPassVal>();
-            //builder.AddExtensionGrantValidator<TokenExchangeExtensionGrantValidator>();
+            ////builder.AddResourceOwnerValidator<IdentityResourceOwnerPassVal>();
+            ////builder.AddExtensionGrantValidator<TokenExchangeExtensionGrantValidator>();
 
-            builder.AddDeveloperSigningCredential();
-            services.AddAuthentication()
-                .AddGoogle(options =>
-                {
-                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
-                    options.ClientId = "copy client ID from Google here";
-                    options.ClientSecret = "copy client secret from Google here";
-                });
+            //builder.AddDeveloperSigningCredential();
+            //services.AddAuthentication()
+            //    .AddGoogle(options =>
+            //    {
+            //        options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+            //        options.ClientId = "copy client ID from Google here";
+            //        options.ClientSecret = "copy client secret from Google here";
+            //    });
 
         }
 
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app, ApplicationDbContext appDbContext)
         {
             if (Environment.IsDevelopment())
             {
@@ -118,12 +118,16 @@ namespace XProject.IdentityServer
             }
             app.UseStaticFiles();
             app.UseRouting();
+            app.UseCors("AllowCors");
             app.UseIdentityServer();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapDefaultControllerRoute();
             });
+
+
+            DatabaseInitializer.Initialize(app, appDbContext);
         }
     }
 }

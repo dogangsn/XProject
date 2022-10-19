@@ -268,3 +268,4 @@ D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\De
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.dll
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.pdb
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.genruntimeconfig.cache
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\EFCore.NamingConventions.dll

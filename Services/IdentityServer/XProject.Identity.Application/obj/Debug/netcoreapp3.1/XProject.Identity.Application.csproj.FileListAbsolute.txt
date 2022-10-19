@@ -7,3 +7,4 @@ D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Application\
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Application\obj\Debug\netcoreapp3.1\XProject.Identity.Application.csproj.CoreCompileInputs.cache
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Application\obj\Debug\netcoreapp3.1\XProject.Identity.Application.dll
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Application\obj\Debug\netcoreapp3.1\XProject.Identity.Application.pdb
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.Identity.Application\obj\Debug\netcoreapp3.1\XProject.Identity.Application.csproj.AssemblyReference.cache

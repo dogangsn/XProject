@@ -23,6 +23,13 @@ namespace XProject.Identity.Infrastructure.Extentions
             string connectionString = configuration.GetConnectionString("DefaultConnection");
             string migrationsAssembly = Assembly.GetExecutingAssembly().GetName().Name;
 
+            services.AddDbContext<ConfigurationDataContext>(options =>
+             options.UseSqlServer(connectionString).UseLowerCaseNamingConvention());
+
+            services.AddDbContext<PersistedGrantDataContext>(options =>
+           options.UseSqlServer(connectionString).UseLowerCaseNamingConvention());
+
+
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             services.AddIdentity<ApplicationUser, IdentityRole>(opt =>

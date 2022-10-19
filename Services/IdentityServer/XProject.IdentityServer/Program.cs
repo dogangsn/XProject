@@ -4,6 +4,7 @@
 
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,7 +13,9 @@ using Serilog;
 using Serilog.Events;
 using Serilog.Sinks.SystemConsole.Themes;
 using System;
+using System.IO;
 using System.Linq;
+using System.Net;
 using XProject.Identity.Infrastructure.Entities;
 using XProject.Identity.Infrastructure.Persistence;
 
@@ -41,7 +44,16 @@ namespace XProject.IdentityServer
 
             try
             {
-              
+
+                //var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Development";
+                //var builder = new ConfigurationBuilder()
+                //               .SetBasePath(Directory.GetCurrentDirectory())
+                //               .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                //               .AddJsonFile($"appsettings.{env}.json", optional: true, reloadOnChange: true)
+                //               .AddEnvironmentVariables();
+
+                //var config = builder.Build();
+                //var host = CreateHostBuilder(config, args).Build();
                 var host = CreateHostBuilder(args).Build();
 
                 using (var scope = host.Services.CreateScope())
@@ -71,12 +83,45 @@ namespace XProject.IdentityServer
             }
         }
 
+        //public static IHostBuilder CreateHostBuilder(IConfiguration configuration, string[] args) =>
+        //    Host.CreateDefaultBuilder(args)
+        //        //.UseSerilog(SeriLogger.Configure)
+        //        .ConfigureWebHostDefaults(webBuilder =>
+        //        {
+        //            webBuilder.ConfigureKestrel(options =>
+        //            {
+
+        //                //TODO: Enverment a göre etirilecek
+        //                var ports = GetDefinedPorts(configuration);
+
+        //                options.Listen(IPAddress.Any, ports.httpPort, listenOptions =>
+        //                {
+        //                    listenOptions.Protocols = HttpProtocols.Http1AndHttp2;
+        //                });
+        //                options.Listen(IPAddress.Any, ports.grpcPort, listenOptions =>
+        //                {
+        //                    listenOptions.Protocols = HttpProtocols.Http2;
+        //                });
+        //                // options.ListenLocalhost(5000, o => o.Protocols = HttpProtocols.Http2);
+
+        //            });
+        //            webBuilder.UseStartup<Startup>();
+        //        });
+
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .UseSerilog()
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+                Host.CreateDefaultBuilder(args)
+                     .UseSerilog()
+                     .ConfigureWebHostDefaults(webBuilder =>
+                     {
+                         webBuilder.UseStartup<Startup>();
+                     });
+
+
+        static (int httpPort, int grpcPort) GetDefinedPorts(IConfiguration config)
+        {
+            var grpcPort = config.GetValue("GRPC_PORT", 5009);
+            var port = config.GetValue("PORT", 5011);
+            return (port, grpcPort);
+        }
     }
 }
