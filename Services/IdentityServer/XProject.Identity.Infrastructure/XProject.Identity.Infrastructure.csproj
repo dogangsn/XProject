@@ -27,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Data\Migrations\IdentityServer\PersistedGrantDb\" />
     <Folder Include="Services\" />
   </ItemGroup>
 

@@ -36,14 +36,14 @@ namespace XProject.Identity.Infrastructure.Persistence
     {
         public PersistedGrantDataContext CreateDbContext(string[] args)
         {
-            var configuration = new ConfigurationBuilder()
-           .SetBasePath(Directory.GetCurrentDirectory())
-           .AddJsonFile("appsettings.json")
-           .Build();
-            var connectionString = configuration.GetConnectionString("DefaultConnection");
+           // var configuration = new ConfigurationBuilder()
+           //.SetBasePath(Directory.GetCurrentDirectory())
+           //.AddJsonFile("appsettings.json")
+           //.Build();
+           // var connectionString = configuration.GetConnectionString("DefaultConnection");
             var dbContextBuilder = new DbContextOptionsBuilder<PersistedGrantDbContext>();
 
-            dbContextBuilder.UseSqlServer(connectionString, postGresOptions => postGresOptions.MigrationsAssembly(typeof(PersistedGrantDataDesignTimeFactory).GetTypeInfo().Assembly.GetName().Name));
+            dbContextBuilder.UseSqlServer("Server=DG;Database=AdminIdentityDb;User Id=sa;Password=123D654!;", postGresOptions => postGresOptions.MigrationsAssembly(typeof(PersistedGrantDataDesignTimeFactory).GetTypeInfo().Assembly.GetName().Name));
             // DbContextOptions<ConfigurationDbContext> ops = dbContextBuilder.Options;
 
             // dbContextBuilder.UseSqlServer(connectionString);
