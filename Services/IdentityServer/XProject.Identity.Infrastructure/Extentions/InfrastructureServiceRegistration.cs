@@ -12,6 +12,7 @@ using XProject.Identity.Infrastructure.Entities;
 using XProject.Identity.Infrastructure.Persistence;
 using XProject.Identity.Infrastructure.Repositories;
 using XProject.Identity.Infrastructure.Services;
+using XProject.Identity.Infrastructure.Services.Interface;
 
 namespace XProject.Identity.Infrastructure.Extentions
 {
@@ -69,9 +70,10 @@ namespace XProject.Identity.Infrastructure.Extentions
             .AddAspNetIdentity<ApplicationUser>();
 
             builder.AddDeveloperSigningCredential();
+            builder.AddProfileService<ProfileService>();
             builder.AddResourceOwnerValidator<PasswordValidatorService>();
 
-
+            services.AddTransient<IProfileService, AdminProfileService>();
             return services;
         }
     }

@@ -126,7 +126,6 @@ D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\De
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.AssemblyInfoInputs.cache
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.AssemblyInfo.cs
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.csproj.CoreCompileInputs.cache
-D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.MvcApplicationPartsAssemblyInfo.cs
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.MvcApplicationPartsAssemblyInfo.cache
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.RazorAssemblyInfo.cache
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.RazorAssemblyInfo.cs

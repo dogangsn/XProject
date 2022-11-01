@@ -1,8 +1,8 @@
-﻿using IdentityServer4.Models;
+﻿using IdentityServer4;
+using IdentityServer4.Models;
 using System.Collections.Generic;
 using System;
 using System.Text;
-using IdentityServer4;
 
 namespace XProject.Identity.Infrastructure
 {
@@ -38,6 +38,21 @@ namespace XProject.Identity.Infrastructure
                    ClientSecrets = { new Secret("secret".Sha256()) },
                    AllowedGrantTypes= GrantTypes.ClientCredentials,
                    AllowedScopes = { "accountapi" , IdentityServerConstants.LocalApi.ScopeName }
+               },
+               new Client
+               {
+                   ClientName = "AdminAPI",
+                   ClientId = "admin",
+                   ClientSecrets = { new Secret("secret".Sha256()) },
+                   AllowOfflineAccess = true,
+                   AlwaysIncludeUserClaimsInIdToken =true,
+                   AllowedGrantTypes= GrantTypes.ResourceOwnerPassword,
+                   AllowedScopes = { "accountapi" , IdentityServerConstants.StandardScopes.Email, IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile, IdentityServerConstants.StandardScopes.OfflineAccess, IdentityServerConstants.LocalApi.ScopeName },
+                   AccessTokenLifetime=43200,
+                   UpdateAccessTokenClaimsOnRefresh=true,
+                   RefreshTokenExpiration=TokenExpiration.Absolute,
+                   AbsoluteRefreshTokenLifetime= (int) (DateTime.Now.AddDays(30)- DateTime.Now).TotalSeconds,
+                   RefreshTokenUsage= TokenUsage.ReUse
                }
            };
 
