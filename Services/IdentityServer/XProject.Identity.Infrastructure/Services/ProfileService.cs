@@ -42,9 +42,9 @@ namespace XProject.Identity.Infrastructure.Services
             return service;
         }
 
-        public Task IsActiveAsync(IsActiveContext context)
+        public async Task IsActiveAsync(IsActiveContext context)
         {
-            throw new NotImplementedException();
+            context.IsActive = true;
         }
     }
 }

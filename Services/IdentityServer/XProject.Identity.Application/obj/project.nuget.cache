@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "fSrZkSt81Yx6T8npxC1rU3RqWLEnuyhoe5LgHz0A5udx5wt40lOntY7SPJL+ehEeDBKHOfk3grPLLKhqkkmf/w==",
+  "dgSpecHash": "pHFZBLdnbxM345JCyHRLLRg+LghGy+udcbaLCxvPvdhVvOutJh1fEu8g71YJNut5yAU8yvJTAdgVMXieF9hFGA==",
   "success": true,
   "projectFilePath": "D:\\Dogan\\Project\\XProject\\Services\\IdentityServer\\XProject.Identity.Application\\XProject.Identity.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

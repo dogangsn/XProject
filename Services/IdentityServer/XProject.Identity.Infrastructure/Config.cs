@@ -19,6 +19,9 @@ namespace XProject.Identity.Infrastructure
         public static IEnumerable<IdentityResource> IdentityResources =>
              new IdentityResource[]
              {
+                new IdentityResources.Email(),
+                new IdentityResources.OpenId(),
+                new IdentityResources.Profile(),
              };
 
         public static IEnumerable<ApiScope> ApiScopes =>
@@ -42,7 +45,7 @@ namespace XProject.Identity.Infrastructure
                new Client
                {
                    ClientName = "AdminAPI",
-                   ClientId = "admin",
+                   ClientId = "adminclient",
                    ClientSecrets = { new Secret("secret".Sha256()) },
                    AllowOfflineAccess = true,
                    AlwaysIncludeUserClaimsInIdToken =true,

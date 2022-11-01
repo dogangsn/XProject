@@ -72,6 +72,7 @@ namespace XProject.Identity.Infrastructure.Extentions
             builder.AddDeveloperSigningCredential();
             builder.AddProfileService<ProfileService>();
             builder.AddResourceOwnerValidator<PasswordValidatorService>();
+            builder.AddExtensionGrantValidator<GrantValidator>();
 
             services.AddTransient<IProfileService, AdminProfileService>();
             return services;
