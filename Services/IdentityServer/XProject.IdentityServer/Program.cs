@@ -45,27 +45,42 @@ namespace XProject.IdentityServer
             try
             {
 
-                //var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Development";
-                //var builder = new ConfigurationBuilder()
-                //               .SetBasePath(Directory.GetCurrentDirectory())
-                //               .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                //               .AddJsonFile($"appsettings.{env}.json", optional: true, reloadOnChange: true)
-                //               .AddEnvironmentVariables();
+                var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Development";
+                var builder = new ConfigurationBuilder()
+                               .SetBasePath(Directory.GetCurrentDirectory())
+                               .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                               .AddJsonFile($"appsettings.{env}.json", optional: true, reloadOnChange: true)
+                               .AddEnvironmentVariables();
 
-                //var config = builder.Build();
-                //var host = CreateHostBuilder(config, args).Build();
-                var host = CreateHostBuilder(args).Build();
+                var config = builder.Build();
+                var host = CreateHostBuilder(config, args).Build();
+                //var host = CreateHostBuilder(args).Build();
 
                 using (var scope = host.Services.CreateScope())
                 {
-                    var serviceProvider = scope.ServiceProvider;
-                    var applicationDbContext = serviceProvider.GetRequiredService<ApplicationDbContext>();
-                    applicationDbContext.Database.Migrate();
+                    //var serviceProvider = scope.ServiceProvider;
+                    //var applicationDbContext = serviceProvider.GetRequiredService<ApplicationDbContext>();
+                    //applicationDbContext.Database.Migrate();
                     //var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
                     //if (userManager.Users.Any())
                     //{
                     //    userManager.CreateAsync(new ApplicationUser { UserName = "Deneme", Email = "deneme@deneme.com" }, "123").Wait();
                     //}
+                    var serviceProvider = scope.ServiceProvider;
+                    var appDbContext = serviceProvider.GetRequiredService<Identity.Infrastructure.Persistence.ApplicationDbContext>();
+                    appDbContext.Database.Migrate();
+
+
+
+                    var userManager = serviceProvider.GetRequiredService<UserManager<Identity.Infrastructure.Entities.ApplicationUser>>();
+                    if (!userManager.Users.Any())
+                    {
+                        userManager.CreateAsync(new Identity.Infrastructure.Entities.ApplicationUser
+                        {
+                            UserName = "oguzhan@kod.com.tr",
+                            Email = "oguzhan@kod.com.tr"
+                        }, "Xidok4096H").Wait();
+                    }
                 }
 
                 Log.Information("Starting host...");
@@ -83,38 +98,38 @@ namespace XProject.IdentityServer
             }
         }
 
-        //public static IHostBuilder CreateHostBuilder(IConfiguration configuration, string[] args) =>
-        //    Host.CreateDefaultBuilder(args)
-        //        //.UseSerilog(SeriLogger.Configure)
-        //        .ConfigureWebHostDefaults(webBuilder =>
-        //        {
-        //            webBuilder.ConfigureKestrel(options =>
-        //            {
+        public static IHostBuilder CreateHostBuilder(IConfiguration configuration, string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                //.UseSerilog(SeriLogger.Configure)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.ConfigureKestrel(options =>
+                    {
 
-        //                //TODO: Enverment a göre etirilecek
-        //                var ports = GetDefinedPorts(configuration);
+                        //TODO: Enverment a göre etirilecek
+                        var ports = GetDefinedPorts(configuration);
 
-        //                options.Listen(IPAddress.Any, ports.httpPort, listenOptions =>
-        //                {
-        //                    listenOptions.Protocols = HttpProtocols.Http1AndHttp2;
-        //                });
-        //                options.Listen(IPAddress.Any, ports.grpcPort, listenOptions =>
-        //                {
-        //                    listenOptions.Protocols = HttpProtocols.Http2;
-        //                });
-        //                // options.ListenLocalhost(5000, o => o.Protocols = HttpProtocols.Http2);
+                        options.Listen(IPAddress.Any, ports.httpPort, listenOptions =>
+                        {
+                            listenOptions.Protocols = HttpProtocols.Http1AndHttp2;
+                        });
+                        options.Listen(IPAddress.Any, ports.grpcPort, listenOptions =>
+                        {
+                            listenOptions.Protocols = HttpProtocols.Http2;
+                        });
+                        // options.ListenLocalhost(5000, o => o.Protocols = HttpProtocols.Http2);
 
-        //            });
-        //            webBuilder.UseStartup<Startup>();
-        //        });
+                    });
+                    webBuilder.UseStartup<Startup>();
+                });
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-                Host.CreateDefaultBuilder(args)
-                     .UseSerilog()
-                     .ConfigureWebHostDefaults(webBuilder =>
-                     {
-                         webBuilder.UseStartup<Startup>();
-                     });
+        //public static IHostBuilder CreateHostBuilder(string[] args) =>
+        //        Host.CreateDefaultBuilder(args)
+        //             .UseSerilog()
+        //             .ConfigureWebHostDefaults(webBuilder =>
+        //             {
+        //                 webBuilder.UseStartup<Startup>();
+        //             });
 
 
         static (int httpPort, int grpcPort) GetDefinedPorts(IConfiguration config)

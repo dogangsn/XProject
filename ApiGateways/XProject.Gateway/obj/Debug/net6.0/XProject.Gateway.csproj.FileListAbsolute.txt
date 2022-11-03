@@ -15,6 +15,7 @@ D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\bin\Debug\net6.0\Microsof
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\bin\Debug\net6.0\Ocelot.dll
+D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\XProject.Gateway.csproj.AssemblyReference.cache
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\XProject.Gateway.GeneratedMSBuildEditorConfig.editorconfig
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\XProject.Gateway.AssemblyInfoInputs.cache
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\XProject.Gateway.AssemblyInfo.cs
@@ -26,8 +27,7 @@ D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\staticwe
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\scopedcss\bundle\XProject.Gateway.styles.css
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\XProject.Gateway.csproj.CopyComplete
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\XProject.Gateway.dll
-D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\ref\XProject.Gateway.dll
+D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\refint\XProject.Gateway.dll
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\XProject.Gateway.pdb
 D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\XProject.Gateway.genruntimeconfig.cache
-D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\XProject.Gateway.csproj.AssemblyReference.cache
-D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\refint\XProject.Gateway.dll
+D:\Dogan\Project\XProject\ApiGateways\XProject.Gateway\obj\Debug\net6.0\ref\XProject.Gateway.dll

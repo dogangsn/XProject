@@ -4,6 +4,101 @@
     "D:\\Dogan\\Project\\XProject\\Services\\IdentityServer\\XProject.IdentityServer\\XProject.IdentityServer.csproj": {}
   },
   "projects": {
+    "D:\\Dogan\\Project\\XProject\\Services\\IdentityServer\\XProject.Identity.Application\\XProject.Identity.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Dogan\\Project\\XProject\\Services\\IdentityServer\\XProject.Identity.Application\\XProject.Identity.Application.csproj",
+        "projectName": "XProject.Identity.Application",
+        "projectPath": "D:\\Dogan\\Project\\XProject\\Services\\IdentityServer\\XProject.Identity.Application\\XProject.Identity.Application.csproj",
+        "packagesPath": "C:\\Users\\DG\\.nuget\\packages\\",
+        "outputPath": "D:\\Dogan\\Project\\XProject\\Services\\IdentityServer\\XProject.Identity.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\DevExpress 22.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Dogan\\Project\\XProject\\Services\\IdentityServer\\XProject.Identity.Infrastructure\\XProject.Identity.Infrastructure.csproj": {
+                "projectPath": "D:\\Dogan\\Project\\XProject\\Services\\IdentityServer\\XProject.Identity.Infrastructure\\XProject.Identity.Infrastructure.csproj"
+              },
+              "D:\\Dogan\\Project\\XProject\\Shared\\XProject.Shared\\XProject.Shared.csproj": {
+                "projectPath": "D:\\Dogan\\Project\\XProject\\Shared\\XProject.Shared\\XProject.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AspNetCore.HealthChecks.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[7.2.1, )"
+            },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.2.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\Dogan\\Project\\XProject\\Services\\IdentityServer\\XProject.Identity.Infrastructure\\XProject.Identity.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -152,6 +247,9 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+              "D:\\Dogan\\Project\\XProject\\Services\\IdentityServer\\XProject.Identity.Application\\XProject.Identity.Application.csproj": {
+                "projectPath": "D:\\Dogan\\Project\\XProject\\Services\\IdentityServer\\XProject.Identity.Application\\XProject.Identity.Application.csproj"
+              },
               "D:\\Dogan\\Project\\XProject\\Services\\IdentityServer\\XProject.Identity.Infrastructure\\XProject.Identity.Infrastructure.csproj": {
                 "projectPath": "D:\\Dogan\\Project\\XProject\\Services\\IdentityServer\\XProject.Identity.Infrastructure\\XProject.Identity.Infrastructure.csproj"
               }
@@ -168,9 +266,37 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "AspNetCore.HealthChecks.UI.Client": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.34.0, )"
+            },
             "IdentityServer4.AspNetIdentity": {
               "target": "Package",
               "version": "[4.0.0, )"
+            },
+            "IdentityServer4.EntityFramework": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "IdentityServer4.EntityFramework.Storage": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[7.2.1, )"
+            },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.2.1, )"
             },
             "MediatR": {
               "target": "Package",
@@ -203,6 +329,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[3.1.5, )"
             },
