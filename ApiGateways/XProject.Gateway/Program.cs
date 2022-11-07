@@ -1,19 +1,23 @@
-using Ocelot.DependencyInjection;
-using Ocelot.Middleware;
+using XProject.Gateway;
 
-var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddOcelot();
-
-Host.CreateDefaultBuilder(args).ConfigureAppConfiguration((hostingContext, config) =>
+public class Program
 {
-    config.AddIniFile($"configuration.{ hostingContext.HostingEnvironment.EnvironmentName.ToLower()}.json").AddEnvironmentVariables();
-});
+    public static void Main(string[] args)
+    {
 
+        CreateHostBuilder(args).Build().Run();
+    }
 
-var app = builder.Build();
-await app.UseOcelot();
-
-
-app.MapGet("/", () => "Hello World!");
-app.Run();
+    public static IHostBuilder CreateHostBuilder(string[] args) =>
+       Host.CreateDefaultBuilder(args)
+           .ConfigureAppConfiguration((hostingContext, config) =>
+           {
+               config.AddJsonFile($"configuration.{hostingContext.HostingEnvironment.EnvironmentName.ToLower()}.json").AddEnvironmentVariables();
+           })
+           .ConfigureWebHostDefaults(webBuilder =>
+           {
+                   //webBuilder.UseUrls("http://localhost:5010", "http://192.168.40.134:5010");
+               webBuilder.UseStartup<Startup>();
+           });
+    
+}

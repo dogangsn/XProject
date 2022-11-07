@@ -23,6 +23,8 @@ namespace XProject.Identity.Infrastructure.Persistence
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.Entity<Account>().HasOne((x) => x.User).WithOne((x) => x.Account).OnDelete(DeleteBehavior.Cascade);
+
             base.OnModelCreating(builder);
         }
     }

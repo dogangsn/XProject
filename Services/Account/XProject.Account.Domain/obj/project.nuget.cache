@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wG+jbKTYzHdWMM0DazBHUkTZt2I3mliwpY3WQDxO93BBxb7iRrFVy+0yjTLEU8g19OzlH+rR8qlhUGukgynPFg==",
+  "dgSpecHash": "MjLvPn0bktcgDXl38T2ZfGEzMMr2CwlkiVx7N6h6PskbtE7as648WpkKWtdfmG7qiWnvRBFhf90qbxgpNLP/7w==",
   "success": true,
   "projectFilePath": "D:\\Dogan\\Project\\XProject\\Services\\Account\\XProject.Account.Domain\\XProject.Account.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.0.0\\microsoft.aspnetcore.http.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.0.0\\microsoft.aspnetcore.http.features.2.0.0.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.6\\microsoft.entityframeworkcore.6.0.6.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.6\\microsoft.entityframeworkcore.abstractions.6.0.6.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.6\\microsoft.entityframeworkcore.analyzers.6.0.6.nupkg.sha512",
@@ -17,7 +19,8 @@
     "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
-    "C:\\Users\\DG\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\DG\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\system.text.encodings.web\\4.4.0\\system.text.encodings.web.4.4.0.nupkg.sha512"
   ],
   "logs": []
 }

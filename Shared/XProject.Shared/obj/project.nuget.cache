@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "XaOO2kMT7naRamkl+moFuXQsJV6LGY/G4j79kCrjPHc+DtRdXPVaXUseTYSElqtkLbCTLTr0dA0Nn2whp7zi2Q==",
+  "dgSpecHash": "0IQ7lAm5Sh3Lntf4eLmhE4KdqBGIDnMtVaII0bz6Bl2eUkMMhCLr4JZQRbZDCN1M0I2H1xoH89DPhKtYtseuVg==",
   "success": true,
   "projectFilePath": "D:\\Dogan\\Project\\XProject\\Shared\\XProject.Shared\\XProject.Shared.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.0.0\\microsoft.aspnetcore.http.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.0.0\\microsoft.aspnetcore.http.features.2.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.extensions.primitives\\2.0.0\\microsoft.extensions.primitives.2.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.4.0\\system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\system.text.encodings.web\\4.4.0\\system.text.encodings.web.4.4.0.nupkg.sha512"
+  ],
   "logs": []
 }

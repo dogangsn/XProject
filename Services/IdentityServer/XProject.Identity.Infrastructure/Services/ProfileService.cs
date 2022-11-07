@@ -38,7 +38,7 @@ namespace XProject.Identity.Infrastructure.Services
         public XProject.Identity.Infrastructure.Services.Interface.IProfileService GetService()
         {
             XProject.Identity.Infrastructure.Services.Interface.IProfileService service;
-            service = new AdminProfileService(_accountService);
+            service = new AdminProfileService(_claimsFactory,_accountService, _userManager);
             return service;
         }
 

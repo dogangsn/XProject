@@ -25,10 +25,10 @@ namespace XProject.Identity.Infrastructure.Persistence
         {
             using (var scope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
-                scope.ServiceProvider.GetRequiredService<PersistedGrantDataContext>().Database.Migrate();
+                //scope.ServiceProvider.GetRequiredService<PersistedGrantDataContext>().Database.Migrate();
 
                 var context = scope.ServiceProvider.GetRequiredService<ConfigurationDataContext>();
-                context.Database.Migrate();
+                //context.Database.Migrate();
                 if (!context.Clients.Any())
                 {
                     foreach (var client in Config.Clients)
@@ -36,6 +36,19 @@ namespace XProject.Identity.Infrastructure.Persistence
                         context.Clients.Add(client.ToEntity());
                     }
                     context.SaveChanges();
+                }
+                else
+                {
+                    var clients = context.Clients.ToList();
+                    var newClients = Config.Clients.Where(r => !clients.Any(x => x.ClientId == r.ClientId)).ToList();
+                    if (newClients.Any())
+                    {
+                        foreach (var client in newClients)
+                        {
+                            context.Clients.Add(client.ToEntity());
+                        }
+                        context.SaveChanges();
+                    }
                 }
 
                 if (!context.IdentityResources.Any())

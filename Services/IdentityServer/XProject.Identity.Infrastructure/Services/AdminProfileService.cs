@@ -79,18 +79,18 @@ namespace XProject.Identity.Infrastructure.Services
         {
             string sql = "Data Source=admin-sql.clrcwaxozgvw.eu-central-1.rds.amazonaws.com;Initial Catalog=MasterDb;User Id=kodmaster;Password=Xi17p!657hg;Persist Security Info = True";
             List<Claim> claims = new List<Claim>();
-            //claims.Add(new Claim("CompanyId", account.CompanyId));
-            //claims.Add(new Claim("FirstName", account.FirstName));
-            //claims.Add(new Claim("LastName", account.LastName));
-            //claims.Add(new Claim("AccountType", account.AccountType.ToString()));
-            //claims.Add(new Claim("TenantId", account.TenantId.ToString()));
-            //claims.Add(new Claim("ConnectionDb", sql));
-            //claims.Add(new Claim("UseSafeListControl", account.UseSafeListControl ? "1" : "0"));
-            //claims.Add(new Claim("RoleId", account.RoleId.ToString()));
-            //claims.Add(new Claim("Host", account.Host.ToString()));
+            claims.Add(new Claim("CompanyId", account.CompanyId));
+            claims.Add(new Claim("FirstName", account.FirstName));
+            claims.Add(new Claim("LastName", account.LastName));
+            claims.Add(new Claim("AccountType", account.AccountType.ToString()));
+            claims.Add(new Claim("TenantId", account.TenantId.ToString()));
+            claims.Add(new Claim("ConnectionDb", sql));
+            claims.Add(new Claim("UseSafeListControl", account.UseSafeListControl ? "1" : "0"));
+            claims.Add(new Claim("RoleId", account.RoleId.ToString()));
+            claims.Add(new Claim("Host", account.Host.ToString()));
             //claims.Add(new Claim("SubscriptionType", Convert.ToInt32(account.SubscriptionType).ToString()));
-            //claims.Add(new Claim("CurrencyCode", account.CurrencyCode));
-            //claims.Add(new Claim("DefaultLanguage", account.DefaultLanguage));
+            claims.Add(new Claim("CurrencyCode", account.CurrencyCode));
+            claims.Add(new Claim("DefaultLanguage", account.DefaultLanguage));
             //string module = string.Empty;
             //if (account.Modules.Any())
             //{
@@ -100,9 +100,33 @@ namespace XProject.Identity.Infrastructure.Services
             return claims;
         }
 
-        public Task<Response<string>> CheckUserAccount(ApplicationUser user, string address, string clientId)
+        public async Task<Response<string>> CheckUserAccount(ApplicationUser user, string address, string clientId)
         {
-            throw new NotImplementedException();
+            var response = new Response<string>
+            {
+                ResponseType = ResponseType.Ok
+            };
+            var account = await _accountService.GetAccountByIdForClaims(user.Id);
+            if (account != null /*&& account.IsLicenceAccount*/)
+            {
+                response.ResponseType = ResponseType.Error;
+                response.Data = "Giriş yetkisi yok";
+                return response;
+            }
+
+            //if (account.UseSafeListControl)
+            //{
+            //    var control = await _accountService.CheckSafeList(account.CompanyId, address);
+            //    if (control != null && control.ResponseType == ResponseType.Error)
+            //    {
+            //        response.ResponseType = ResponseType.Error;
+            //        response.Data = control.Message;
+
+            //        _logger.LogError(control.Message);
+            //    }
+            //}
+
+            return response;
         }
     }
 }

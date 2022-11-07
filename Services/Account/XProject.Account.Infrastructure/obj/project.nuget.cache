@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DTktPE22kkVGM4oE4JFls5G7zcOphTGxGKykY9Lbgv7wOEpP8PM57o215aZ4Ctj6EgWVJXigsYtaE3iSb29S8Q==",
+  "dgSpecHash": "7C8QGDFJhMRtQiuTitRMX7vPl4PValV/IrDEC71/yKkjqjlq+M28dyqwEJC+48sQmvvsxzy6KXzhrJcoZajc/A==",
   "success": true,
   "projectFilePath": "D:\\Dogan\\Project\\XProject\\Services\\Account\\XProject.Account.Infrastructure\\XProject.Account.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,8 @@
     "C:\\Users\\DG\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.0.0\\microsoft.aspnetcore.http.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\DG\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.0.0\\microsoft.aspnetcore.http.features.2.0.0.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\DG\\.nuget\\packages\\microsoft.data.sqlclient\\3.0.1\\microsoft.data.sqlclient.3.0.1.nupkg.sha512",

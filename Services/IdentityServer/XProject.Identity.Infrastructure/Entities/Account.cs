@@ -18,6 +18,7 @@ namespace XProject.Identity.Infrastructure.Entities
         public string RoleId { get; set; }
         public bool? Passive { get; set; }
         public bool IsLicenceAccount { get; set; }
+        //public Guid TenantId { get; set; }
 
         [ForeignKey("UserId")]
         public virtual ApplicationUser User { get; set; }

@@ -16,6 +16,8 @@ namespace XProject.Shared.Dtos
 
         public List<string> Errors { get; set; }
 
+        public ResponseType ResponseType { get; set; }
+
 
         public static Response<T> Success(T data, int statusCode)
         {
@@ -41,5 +43,14 @@ namespace XProject.Shared.Dtos
             return new Response<T> { Errors = new List<string>(), StatusCode = statusCode, IsSuccessful = false };
         }
 
+    }
+
+    public enum ResponseType
+    {
+        Ok = 1,
+        Warning = 2,
+        Error = 3,
+        updatedFromMembershipRegister = 4,
+        ConcurrencyException = 5
     }
 }

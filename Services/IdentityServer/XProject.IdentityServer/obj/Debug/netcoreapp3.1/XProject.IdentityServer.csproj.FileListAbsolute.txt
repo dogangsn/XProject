@@ -121,16 +121,8 @@ D:\Dogan\Project\XProject\XProject\Services\IdentityServer\XProject.IdentityServ
 D:\Dogan\Project\XProject\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.dll
 D:\Dogan\Project\XProject\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.pdb
 D:\Dogan\Project\XProject\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.genruntimeconfig.cache
-D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.csproj.AssemblyReference.cache
-D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.GeneratedMSBuildEditorConfig.editorconfig
-D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.AssemblyInfoInputs.cache
-D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.AssemblyInfo.cs
-D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.csproj.CoreCompileInputs.cache
-D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.MvcApplicationPartsAssemblyInfo.cs
-D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.MvcApplicationPartsAssemblyInfo.cache
-D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.RazorAssemblyInfo.cache
-D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.RazorAssemblyInfo.cs
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\appsettings.Local.json
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\XProject.IdentityServer.StaticWebAssets.xml
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\XProject.IdentityServer.exe
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\appsettings.json
@@ -145,6 +137,7 @@ D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\De
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\HealthChecks.UI.Client.dll
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\HealthChecks.UI.Core.dll
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\AutoMapper.dll
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\Automatonymous.dll
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\Azure.Core.dll
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\Azure.Identity.dll
@@ -267,6 +260,15 @@ D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\De
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\XProject.Identity.Application.pdb
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\XProject.Identity.Infrastructure.pdb
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\XProject.Shared.pdb
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.csproj.AssemblyReference.cache
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.AssemblyInfoInputs.cache
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.AssemblyInfo.cs
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.csproj.CoreCompileInputs.cache
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.MvcApplicationPartsAssemblyInfo.cs
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.MvcApplicationPartsAssemblyInfo.cache
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.RazorAssemblyInfo.cache
+D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.RazorAssemblyInfo.cs
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\staticwebassets\XProject.IdentityServer.StaticWebAssets.Manifest.cache
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\staticwebassets\XProject.IdentityServer.StaticWebAssets.xml
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.TagHelpers.input.cache
@@ -298,4 +300,3 @@ D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\De
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.dll
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.pdb
 D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\obj\Debug\netcoreapp3.1\XProject.IdentityServer.genruntimeconfig.cache
-D:\Dogan\Project\XProject\Services\IdentityServer\XProject.IdentityServer\bin\Debug\netcoreapp3.1\appsettings.Local.json
