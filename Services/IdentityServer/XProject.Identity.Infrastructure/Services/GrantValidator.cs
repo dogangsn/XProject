@@ -6,10 +6,11 @@ using System.Collections.Generic;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using XProject.Identity.Infrastructure.Services.Interface;
 
 namespace XProject.Identity.Infrastructure.Services
 {
-    internal class GrantValidator : IProfileService, IExtensionGrantValidator
+    internal class GrantValidator : IdentityServer4.Services.IProfileService, IExtensionGrantValidator
     {
         public string GrantType => "delegation";
         private readonly IAccountService _accountService;

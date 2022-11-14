@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using System.Threading.Tasks;
 using XProject.Identity.Infrastructure.Entities;
-using XProject.Identity.Infrastructure.Services;
+using XProject.Identity.Infrastructure.Services.Interface;
 
 namespace XProject.IdentityServer.Grpc
 {

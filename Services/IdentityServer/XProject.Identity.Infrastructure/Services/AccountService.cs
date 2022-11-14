@@ -8,6 +8,7 @@ using XProject.Identity.Infrastructure.Persistence;
 using XProject.Shared.Accounts;
 using System.Linq;
 using Microsoft.Extensions.Configuration;
+using XProject.Identity.Infrastructure.Services.Interface;
 
 namespace XProject.Identity.Infrastructure.Services
 {

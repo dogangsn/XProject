@@ -28,7 +28,6 @@ namespace XProject.Identity.Infrastructure.Services
             _httpContextAccessor = httpContextAccessor;
         }
 
-
         public async Task ValidateAsync(ResourceOwnerPasswordValidationContext context)
         {
             var existUser = await _userManager.FindByEmailAsync(context.UserName);
@@ -37,7 +36,6 @@ namespace XProject.Identity.Infrastructure.Services
                 var error = new Dictionary<string, object>();
                 error.Add("errors", new List<string> { "Email veya şifre yanlış" });
                 context.Result.CustomResponse = error;
-
                 return;
             }
 
@@ -47,7 +45,6 @@ namespace XProject.Identity.Infrastructure.Services
                 var error = new Dictionary<string, object>();
                 error.Add("errors", new List<string> { "Email veya şifre yanlış" });
                 context.Result.CustomResponse = error;
-
                 return;
             }
 
@@ -67,7 +64,7 @@ namespace XProject.Identity.Infrastructure.Services
 
             var service = GetService();
             var accountresponse = await service.CheckUserAccount(existUser, ip, context.Request.ClientId);
-            if (accountresponse != null)
+            if (accountresponse != null && accountresponse.ResponseType == Shared.Dtos.ResponseType.Error)
             {
                 var errors = new Dictionary<string, object>();
                 errors.Add("errors", new List<string> { accountresponse.Data });
@@ -76,7 +73,6 @@ namespace XProject.Identity.Infrastructure.Services
             }
             context.Result = new GrantValidationResult(existUser.Id.ToString(), OidcConstants.AuthenticationMethods.Password);
         }
-
 
         public IProfileService GetService()
         {

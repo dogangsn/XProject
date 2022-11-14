@@ -1,16 +1,16 @@
 ﻿using IdentityServer4.Models;
-using IdentityServer4.Services;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using XProject.Identity.Infrastructure.Entities;
+using XProject.Identity.Infrastructure.Services.Interface;
 using XProject.Shared.Dtos;
 
 namespace XProject.Identity.Infrastructure.Services
 {
-    public class ProfileService :  IProfileService
+    public class ProfileService :  IdentityServer4.Services.IProfileService
     {
 
         private readonly IUserClaimsPrincipalFactory<ApplicationUser> _claimsFactory;

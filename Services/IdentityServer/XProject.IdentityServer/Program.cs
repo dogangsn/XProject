@@ -69,17 +69,14 @@ namespace XProject.IdentityServer
                     var serviceProvider = scope.ServiceProvider;
                     var appDbContext = serviceProvider.GetRequiredService<Identity.Infrastructure.Persistence.ApplicationDbContext>();
                     appDbContext.Database.Migrate();
-
-
-
                     var userManager = serviceProvider.GetRequiredService<UserManager<Identity.Infrastructure.Entities.ApplicationUser>>();
                     if (!userManager.Users.Any())
                     {
                         userManager.CreateAsync(new Identity.Infrastructure.Entities.ApplicationUser
                         {
-                            UserName = "oguzhan@kod.com.tr",
-                            Email = "oguzhan@kod.com.tr"
-                        }, "Xidok4096H").Wait();
+                            UserName = "dogangns.98@gmail.com",
+                            Email = "dogangns.98@gmail.com"
+                        }, "123D654!").Wait();
                     }
                 }
 
