@@ -37,6 +37,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XProject.Account.Infrastruc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XProject.Account.Domain", "Services\Account\XProject.Account.Domain\XProject.Account.Domain.csproj", "{A97D48CB-09C0-498B-88A0-514539F0CD7A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bounds", "Bounds", "{744C5C33-1868-4540-B101-96D9DF7E2DB4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XProject.Bound.Api", "Services\Bounds\XProject.Bound.Api\XProject.Bound.Api.csproj", "{70FA2CAB-56AB-4ED9-8D30-3990705EEF54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +83,10 @@ Global
 		{A97D48CB-09C0-498B-88A0-514539F0CD7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A97D48CB-09C0-498B-88A0-514539F0CD7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A97D48CB-09C0-498B-88A0-514539F0CD7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70FA2CAB-56AB-4ED9-8D30-3990705EEF54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70FA2CAB-56AB-4ED9-8D30-3990705EEF54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70FA2CAB-56AB-4ED9-8D30-3990705EEF54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70FA2CAB-56AB-4ED9-8D30-3990705EEF54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +103,8 @@ Global
 		{944771A4-ADEB-4020-B133-EDBDF9996B47} = {02A13A5F-D880-4211-BE38-6E10FCED07AC}
 		{75EE2DCC-90B7-4BAC-A2D0-BE9009785A9B} = {02A13A5F-D880-4211-BE38-6E10FCED07AC}
 		{A97D48CB-09C0-498B-88A0-514539F0CD7A} = {02A13A5F-D880-4211-BE38-6E10FCED07AC}
+		{744C5C33-1868-4540-B101-96D9DF7E2DB4} = {E5BED43D-9373-4CE8-8663-FC198A9063A7}
+		{70FA2CAB-56AB-4ED9-8D30-3990705EEF54} = {744C5C33-1868-4540-B101-96D9DF7E2DB4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2AA44BF5-C0BF-4EE7-BEC8-58C79A199D49}
