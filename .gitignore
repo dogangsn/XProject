@@ -37,3 +37,8 @@ bld/
 ApiGateways/XProject.Gateway/bin/Debug/
 *.vsidx
 *.vsidx
+.vs/ProjectEvaluation/xproject.metadata.v5.2
+.vs/ProjectEvaluation/xproject.metadata.v5.2
+.vs/ProjectEvaluation/xproject.projects.v5.2
+.vs/XProject/DesignTimeBuild/.dtbcache.v2
+.vs/XProject/v17/.futdcache.v2
